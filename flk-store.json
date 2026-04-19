@@ -1,0 +1,30 @@
+{
+    "linux": {
+        "all": {
+            "symlink": {
+                "~": [
+                    {
+                        "fake": "~/.oh-my-bash",
+                        "real": ".dotfiles/bash/.oh-my-bash"
+                    }
+                ],
+                "~/.dotfiles": [
+                    {
+                        "fake": "~/.config/starship.toml",
+                        "real": "bash/starship.toml"
+                    },
+                    {
+                        "fake": "~/.config/flk/flk-store.json",
+                        "real": "flk-store.json"
+                    }
+                ],
+                "~/.dotfiles/bash": [
+                    {
+                        "fake": "~/.bashrc",
+                        "real": ".bashrc"
+                    }
+                ]
+            }
+        }
+    }
+}
