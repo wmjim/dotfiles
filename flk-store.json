@@ -16,6 +16,10 @@
                     {
                         "fake": "~/.config/flk/flk-store.json",
                         "real": "flk-store.json"
+                    },
+                    {
+                        "fake": "~/.config/fastfetch",
+                        "real": "fastfetch"
                     }
                 ],
                 "~/.dotfiles/bash": [
