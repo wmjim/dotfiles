@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jesseduffield/lazygit/master/schema/config.json
+
+gui:
+  language: "zh-CN"
+  theme:
+    activeBorderColor:
+      - green
+      - bold
+  showBranchCommitGraph: true
+  nerdFontsVersion: "3"
+  showFileIcons: true
+  timeFormat: "2006-01-02 15:04"
+
+git:
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never
+  pull:
+    mode: auto
+  autoFetch: true
+
+os:
+  editPreset: "nvim"   # 或 "vim", "vscode", "sublime" 等
+
+customCommands:
+  - key: "C"
+    context: "files"
+    description: "规范提交 (conventional commit)"
+    prompts:
+      - type: "menu"
+        title: "提交类型"
+        key: "Type"
+        options:
+          - name: "feat"
+            description: "新功能"
+            value: "feat"
+          - name: "fix"
+            description: "修复"
+            value: "fix"
+          - name: "docs"
+            description: "文档"
+            value: "docs"
+      - type: "input"
+        title: "提交信息"
+        key: "Message"
+    command: 'git commit -m "{{.Form.Type}}: {{.Form.Message}}"'

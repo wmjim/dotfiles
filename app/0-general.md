@@ -3,7 +3,6 @@
 ```bash
 # ubuntu
 sudo apt install fastfetch
-
 # macos
 brew install fastfetch
 ```
@@ -13,7 +12,6 @@ brew install fastfetch
 ```bash
 # ubuntu
 sudo apt install net-tools
-
 # macos
 brew install inetutils
 ```
@@ -23,7 +21,6 @@ brew install inetutils
 ```bash
 # ubuntu
 sudo apt install curl
-
 # macos
 brew install curl
 ```
@@ -33,7 +30,6 @@ brew install curl
 ```bash
 # ubuntu
 sudo apt install wget
-
 # macos
 brew install wget
 ```
@@ -43,7 +39,6 @@ brew install wget
 ```bash
 # ubuntu
 sudo apt install eza
-
 # macos
 brew install eza
 ```
@@ -53,7 +48,6 @@ brew install eza
 ```bash
 # ubuntu
 sudo apt install zoxide
-
 # macos
 brew install zoxide
 ```
@@ -63,7 +57,6 @@ brew install zoxide
 ```bash
 # ubuntu
 sudo apt install ripgrep
-
 # macos
 brew install ripgrep
 ```
@@ -73,7 +66,6 @@ brew install ripgrep
 ```bash
 # ubuntu
 sudo apt install bat
-
 # macos
 brew install bat
 ```
@@ -83,7 +75,6 @@ brew install bat
 ```bash
 # ubuntu
 sudo apt install fd-find
-
 # macos
 brew install fd
 ```
@@ -93,7 +84,6 @@ brew install fd
 ```bash
 # ubuntu
 sudo apt install neovim
-
 # macos
 brew install neovim
 ```
@@ -103,7 +93,24 @@ brew install neovim
 ```bash
 # ubuntu
 sudo apt install tmux
-
 # macos
 brew install tmux
+```
+
+## fzf
+
+```bash
+# ubuntu
+sudo apt install fzf
+# macos
+brew install fzf
+```
+
+## fish
+
+```bash
+# ubuntu
+sudo apt install fish
+# macos
+brew install fish
 ```

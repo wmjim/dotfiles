@@ -3,9 +3,18 @@
 	email = meng.w1016@outlook.com
 [core]
 	editor = nvim
+	pager = delta
 [init]
 	defaultBranch = main
-[http]
-	proxy = http://127.0.0.1:7897
-[https]
-	proxy = http://127.0.0.1:7897
+
+[safe]
+	directory = *
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+    line-numbers = true
+    side-by-side = false
+    syntax-theme = Monokai Extended

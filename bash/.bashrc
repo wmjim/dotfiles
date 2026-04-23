@@ -53,7 +53,6 @@ completions=(
   git             # git
   pip3            # pip3
   uv              # uv
-  conda           # conda
   docker          # docker容器
   docker-compose  # docker编排
   npm             # npm
@@ -88,7 +87,6 @@ plugins=(
   cargo           # rust包管理器
   npm             # nodejs包管理器
   golang          # golang工具链
-  chezmoi         # chezmoi点文件管理工具
   zoxide          # 更智能的cd
   fzf             # 模糊查找器     
   tmux            # tmux会话
@@ -108,11 +106,11 @@ plugins=(
 
 
 source "$OSH"/oh-my-bash.sh
+. "$HOME/.cargo/env"
 
 # 环境变量
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH=$PATH:~/.local/bin
-
 
 # 语言环境
 export LANG=en_US.UTF-8
@@ -132,4 +130,20 @@ export LANG=en_US.UTF-8
 
 # 别名：命令 alias，可查看别名列表
 # alias bashconfig="mate ~/.bashrc"
-
+alias ".."="cd .."
+alias "..."="cd ../.."
+alias update="sudo apt update && sudo apt upgrade"
+alias bat="batcat --style=plain"
+alias cat="batcat --style=plain --paging=never"
+# 基础替换：带图标、目录优先、文件类型颜色
+alias ls='eza --icons=auto --group-directories-first --color=auto'
+# 详细列表 + Git 状态（最常用）
+alias ll='eza -l --icons=auto --group-directories-first --git --header'
+# 显示隐藏文件
+alias la='eza -a --icons=auto --group-directories-first'
+# 详细版显示隐藏文件
+alias lla='eza -la --icons=auto --group-directories-first --git --header'
+# 树形显示，限制 2 层，避免刷屏
+alias lt='eza --tree --level=2 --icons=auto'
+# 只看目录
+alias ldir='eza -D --icons=auto'

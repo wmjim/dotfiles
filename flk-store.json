@@ -6,6 +6,16 @@
                     {
                         "fake": "~/.oh-my-bash",
                         "real": ".dotfiles/bash/.oh-my-bash"
+                    },
+                    {
+                        "fake": "~/.config/tmux",
+                        "real": ".dotfiles/tmux/tmux"
+                    }
+                ],
+                "~/.config": [
+                    {
+                        "fake": "~/.config/lazygit",
+                        "real": "../.dotfiles/git/lazygit"
                     }
                 ],
                 "~/.dotfiles": [
@@ -20,12 +30,22 @@
                     {
                         "fake": "~/.config/fastfetch",
                         "real": "fastfetch"
+                    },
+                    {
+                        "fake": "~/.config/fish",
+                        "real": "fish"
                     }
                 ],
                 "~/.dotfiles/bash": [
                     {
                         "fake": "~/.bashrc",
                         "real": ".bashrc"
+                    }
+                ],
+                "~/.dotfiles/tmux": [
+                    {
+                        "fake": "~/.tmux.conf",
+                        "real": ".tmux.conf"
                     }
                 ]
             }
